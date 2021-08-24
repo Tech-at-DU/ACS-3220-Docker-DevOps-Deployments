@@ -1,6 +1,6 @@
 <p align="center"><img src="Images/docker.svg" height="200"></p>
 
-# Docker, DevOps, & Deployments
+# ACS 3220: Docker, DevOps, & Deployments
 
 <span class="refresh-instructions">This syllabus is a living document! Hold down the `SHIFT` key and press `Refresh` to get the latest version.</span>
 
