@@ -17,7 +17,6 @@
    1. [Challenges](#challenges)
    1. [Final Project](#final-project)
 1. [Evaluation](#evaluation)
-1. [Academic Honesty Policy](#academic-honesty-policy)
 
 ## Course Description
 
@@ -25,7 +24,6 @@ In this course students will learn the two main flavors of Developer Operations 
 
 ## Prerequisites
 
-- [BEW 1.1](https://make.sc/bew1-1)
 - [BEW 1.2](https://make.sc/bew1-2)
 
 ## Course Specifics
@@ -125,26 +123,6 @@ Gain valuable real-world experience in DevOps through these hands-on activities.
 - **Submit a [final project](Projects/FinalProject.md) on [Gradescope]** and pass according to the [rubric](Projects/FinalProject.md#rubric).
 - Actively **participate in class** and **abide by the attendance policy**.
 - **Make up all classwork** from all absences.
-
-## Academic Honesty Policy
-
-At ACS, we highly encourage collaboration between students on assignments. Working with other people is the best way to learn!
-
-However, there's a big difference between **collaboration** (writing code together with another person) and **plagiarism** (copying code from a classmate or outside source without providing proper attribution).
-
-Here are some guidelines to follow in order to avoid plagiarism:
-
-1. If you are looking at an outside source for help, **close the window** containing the code before writing your own solution.
-1. Do not write down a line of code unless you **completely understand** how it works. (This is true even if the source you're referencing is the lesson slides/examples/etc!)
-1. If your code is still similar to an outside source or another student's, **provide attribution** by adding a comment to your code explaining where it was taken from.
-
-We take academic honesty very seriously at ACS. The consequences for violating the policy are as follows:
-
-- You will be required to write a [Self-Reflection Letter](https://docs.google.com/document/d/140_PHfDh7gu33OZI_caxEtvNzAlAepjnGcbQcXZ-MRo/edit?usp=sharing) to reflect on how your actions affected others.
-- If this is your first offense, you may be permitted to redo the assignment for a reduced grade (at the instructor's discretion).
-- The incident will be added to your permanent record at ACS and you may be placed on a Participation Improvement Plan (PIP).
-
-For subsequent offenses, more serious consequences may be considered. For more information, please see [ACS's academic honesty policy](https://make.sc/academic-honesty-policy).
 
 [Alerts]: Lessons/Alerts.md
 [Architecture Diagrams]: Lessons/Diagrams.md
