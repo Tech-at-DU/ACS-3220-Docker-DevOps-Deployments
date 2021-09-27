@@ -5,9 +5,8 @@
 - [⭐️ Project Goals](#%e2%ad%90%ef%b8%8f-project-goals)
 - [📋 Project Requirements](#%f0%9f%93%8b-project-requirements)
 - [🗓 Deliverables & Due Dates](#%f0%9f%97%93-deliverables--due-dates)
-  - [1️⃣ **Presentation**: Due 12/9 @ 11:59pm](#1%ef%b8%8f%e2%83%a3-presentation-due-108--1159pm)
-  - [2️⃣ **Blog Post**: Due 12/9 @ 11:59pm](#2%ef%b8%8f%e2%83%a3-blog-post-due-108--1159pm)
-  - [3️⃣ **Repository**: Due 12/9 @ 11:59pm](#3%ef%b8%8f%e2%83%a3-repository-due-108--1159pm)
+  - [2️⃣ **Blog Post**: Due 10/8 @ 11:59pm](#2%ef%b8%8f%e2%83%a3-blog-post-due-108--1159pm)
+  - [3️⃣ **Repository**: Due 10/8 @ 11:59pm](#3%ef%b8%8f%e2%83%a3-repository-due-108--1159pm)
 
 ## ⭐️ Project Goals
 
