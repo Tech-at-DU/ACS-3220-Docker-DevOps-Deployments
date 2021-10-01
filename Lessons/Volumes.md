@@ -6,16 +6,20 @@
 <!-- omit in toc -->
 ## ⏰ Agenda
 
-- [[**20m**] Warm Up: Persistence & You](#20m-warm-up-persistence--you)
-- [[**10m**] Discuss: Persistence & You](#10m-discuss-persistence--you)
-- [[**30m**] TT: Docker Volumes](#30m-tt-docker-volumes)
-  - [Getting to Know the Docker Filesystem](#getting-to-know-the-docker-filesystem)
-  - [Saving Data in the Filesystem](#saving-data-in-the-filesystem)
-  - [Final Tips & Tricks: Permissions](#final-tips--tricks-permissions)
-- [[**15m**] Tutorial: Docker Volumes](#15m-tutorial-docker-volumes)
-- [[**10m**] BREAK](#10m-break)
-- [[**20m**] Activity: CapRover Persistent Apps](#20m-activity-caprover-persistent-apps)
-- [[**10m**] Demo: Persist Data on Production](#10m-demo-persist-data-on-production)
+1. [[**15m**] Warm Up: Persistence & You](#%5B%2a%2a15m%2a%2a%5D-warm-up%3A-persistence-%26-you)
+1. [[**10m**] Discuss: Persistence & You](#%5B%2a%2a10m%2a%2a%5D-discuss%3A-persistence-%26-you)
+1. [[**30m**] TT: Docker Volumes](#%5B%2a%2a30m%2a%2a%5D-tt%3A-docker-volumes)
+   1. [Getting to Know the Docker Filesystem](#getting-to-know-the-docker-filesystem)
+   1. [Saving Data in the Filesystem](#saving-data-in-the-filesystem)
+      1. [Say Hello to Docker Volumes](#say-hello-to-docker-volumes)
+      1. [Creating a Volume](#creating-a-volume)
+   1. [Final Tips & Tricks: Permissions](#final-tips-%26-tricks%3A-permissions)
+      1. [Doesn't Work](#doesn%27t-work)
+      1. [Works Great](#works-great)
+      1. [Here's Why](#here%27s-why)
+1. [[**10m**] BREAK](#%5B%2a%2a10m%2a%2a%5D-break)
+1. [[**15m**] Instructor Does: Install MongoDB on CapRover](#%5B%2a%2a15m%2a%2a%5D-instructor-does%3A-install-mongodb-on-caprover)
+1. [[**15m**] Students Do: Install MongoDB on CapRover](#%5B%2a%2a15m%2a%2a%5D-students-do%3A-install-mongodb-on-caprover)
 
 <!-- > -->
 
@@ -28,9 +32,7 @@
 
 <!-- > -->
 
-## [**20m**] Warm Up: Persistence & You
-
-First, double-check that you've submitted your final project proposal repo link on [Gradescope]!
+## [**15m**] Warm Up: Persistence & You
 
 Then, we'll break out into groups to discuss the following questions together:
 
@@ -127,19 +129,6 @@ $ docker volume inspect 8e0b3a9d5c544b63a0bbaa788a250e6f4592d81c089f9221108379fd
 
 In both cases, the output tells us that Docker has mounted `/data` inside the container as a directory somewhere under `/var/lib/docker`.
 
-Let’s add a file called `test-file` to the directory from the host:
-
-```bash
-$ sudo touch /var/lib/docker/volumes/8e0b3a9d5c544b63a0bbaa788a250e6f4592d81c089f9221108379fd7e5ed017/_data/test-file
-```
-
-We can see it inside our container with this command, run from inside the container:
-
-```bash
-$ root@CONTAINER:/# ls /data
-test-file
-```
-
 You can also create volumes inside of a `Dockerfile`:
 
 ```Dockerfile
@@ -156,7 +145,7 @@ my-vol
 
 There is another major use case for volumes that can only be accomplished through the `-v` flag: mounting a specific directory from the host into a container.
 
-Example:
+**Example**:
 
 ```bash
 $ docker run -v /Users/dani/data:/data debian ls /data
@@ -216,30 +205,34 @@ If you can’t set permissions and ownership in a `RUN` command, you will have t
 
 <!-- > -->
 
-## [**15m**] Tutorial: Docker Volumes
-
-Complete this [KataCoda Tutorial](https://www.katacoda.com/courses/docker/persisting-data-using-volumes) to reinforce the concepts we discussed in class.
-
-<!-- > -->
-
 ## [**10m**] BREAK
 
 <!-- > -->
 
-## [**20m**] Activity: CapRover Persistent Apps
+## [**15m**] Instructor Does: Install MongoDB on CapRover
 
-Read through the [Persistent Apps](https://caprover.com/docs/persistent-apps.html) documentation and answer the following questions in groups of two:
+The instructor will demonstrate how to install MongoDB on CapRover.
 
-- When should an app be persistent?
-- When shouldn't it be?
+**PROTIPS**:
 
-Give **specific examples** of each!
+- The MongoDB docker image uses volumes to store data that persists even if the server restarts.
+- One database server is meant to serve many applications
+- Do not create a new database server each time you create a new app; use the existing one.
 
 <!-- > -->
 
-## [**10m**] Demo: Persist Data on Production
+## [**15m**] Students Do: Install MongoDB on CapRover
 
-Demonstrate how to set up a persistent application on CapRover.
+Following the demonstration, install MongoDB on your own CapRover instance.
+
+1. Write down the **connection string** that is provided at the end of setup. Not sure what a **connection string** is? Investigate with your breakout buddies!
+1. What **changes** would you need to make to an application in order to **use this connection string in production**?
+
+<!-- > -->
+
+## [**10m**] Finish Early? Learn More About Docker Volumes
+
+**OPTIONAL**: Complete this [KataCoda Tutorial](https://www.katacoda.com/courses/docker/persisting-data-using-volumes) to reinforce the concepts we discussed in class.
 
 <!-- > -->
 
@@ -248,8 +241,3 @@ Demonstrate how to set up a persistent application on CapRover.
 
 - https://docs.docker.com/storage/volumes/
 - https://docs.docker.com/storage/bind-mounts/
-
-<!-- do not edit below this line !-->
-[View]: https://make-school-courses.github.io/BEW-2.3-Web-Security/Slides/00-LESSON_NAME_TODO
-[Gradescope]: https://www.gradescope.com/courses/133579
-[Link]: https://en.wikipedia.org/wiki/HTTP_404
