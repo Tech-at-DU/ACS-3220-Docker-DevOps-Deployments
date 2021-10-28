@@ -3,21 +3,21 @@
 
 ⭐️ **GOAL**: Learn about the domain name system and register your very own domain for use throughout the course.
 
-|**Time**  | **Activity**              |
- --------- | ------------------------- |
-| 5 MIN     | 🏆 Learning Objectives    |
-| 15 MIN    | 📚 Review DNS Comic   |
-| 10 MIN    | 🔥 Trace a request   |
-| 30 MIN    | 🗣️ Register a Domain Name + Link to GitHub   |
-| 10 MIN    | 🛏️ BREAK                     |
-| - MIN     | 💪 Tutorial Q&A + Work Time      |
+| **Time** | **Activity**                              |
+| -------- | ----------------------------------------- |
+| 5 MIN    | 🏆 Learning Objectives                     |
+| 15 MIN   | 📚 Review DNS Comic                        |
+| 10 MIN   | 🔥 Trace a request                         |
+| 30 MIN   | 🗣️ Register a Domain Name + Link to GitHub |
+| 10 MIN   | 🛏️ BREAK                                   |
+| - MIN    | 💪 Tutorial Q&A + Work Time                |
 
 <!-- > -->
 
 ### 🏆 [5m] Learning Objectives
 
 By the end of this class you will be able to...
-1. explain the role of DNS and domain names 
+1. explain the role of DNS and domain names
 2. trace a request using the `traceroute` command
 3. register a domain name + link to GitHub Pages
 4. be fully prepared for the next set of Docker lessons
@@ -36,7 +36,7 @@ Upon return to the main room, the instructor should "trace" the example ping to 
 
 <!-- > -->
 
-### 🔥 [10m] Trace a request 
+### 🔥 [10m] Trace a request
 
 ##### ACTIVITY
 
@@ -73,7 +73,7 @@ Demonstrate a working set of `CNAME` and `A Record` properties using the `dig` c
 
 EX:
 ```
- ~ dig www.jaylowe.xyz +nostats +nocomments +nocmd                                                  ✔  at 14:59:35 
+ ~ dig www.jaylowe.xyz +nostats +nocomments +nocmd                                                  ✔  at 14:59:35
 
 www.jaylowe.xyz.	1799	IN	CNAME	ogjaylowe.github.io.
 ogjaylowe.github.io.	3600	IN	A	185.199.108.153
@@ -85,14 +85,14 @@ ogjaylowe.github.io.	3600	IN	A	185.199.110.153
 
 <!-- > -->
 
-### 🛏️ [10m] BREAK   
+### 🛏️ [10m] BREAK
 
 <!-- > -->
-### 💪 [-m] Tutorial Q&A + Work Time 
+### 💪 [-m] Tutorial Q&A + Work Time
 
 Use this time to ask questions about the tutorials and/or complete them in preperation for the upcoming Docker lessons.
 
 <!-- do not edit below this line !-->
-[View]: https://make-school-courses.github.io/BEW-2.3-Web-Security/Slides/00-LESSON_NAME_TODO
+[View]: https://tech-at-du.github.io/BEW-2.3-Web-Security/Slides/00-LESSON_NAME_TODO
 [Gradescope]: https://www.gradescope.com/courses/133579
 [Link]: https://en.wikipedia.org/wiki/HTTP_404
