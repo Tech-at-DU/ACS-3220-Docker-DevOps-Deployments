@@ -50,7 +50,7 @@ Past students have utilized projects from the following courses to complete this
 
 - **[SPD 1.5](https://make.sc/spd1.5)**: Simplify day to day development for your SPD team by ensuring your application and it's dependencies run the same on each team member's machine.
 - **[BEW 1.1](https://make.sc/bew1.1)**: Dockerize a Flask project.
-- **[BEW 1.2](https://make.sc/bew1.2)**: Dockerize a Django project.
+- **[ACS 1120](https://make.sc/bew1.2)**: Dockerize a Django project.
 - **[BEW 1.3](https://make.sc/bew1.3)**: Dockerize a Node project.
 
 <!-- omit in toc -->

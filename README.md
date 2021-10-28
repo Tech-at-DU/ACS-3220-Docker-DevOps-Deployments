@@ -17,6 +17,7 @@
    1. [Challenges](#challenges)
    1. [Final Project](#final-project)
 1. [Evaluation](#evaluation)
+1. [Class Recordings](#class-recordings)
 
 ## Course Description
 
@@ -24,7 +25,7 @@ In this course students will learn the two main flavors of Developer Operations 
 
 ## Prerequisites
 
-- [BEW 1.2](https://make.sc/bew1-2)
+- [ACS 1120](https://bit.ly/acs1120)
 
 ## Course Specifics
 
@@ -42,7 +43,7 @@ _By the end of this course, you will be able to&hellip;_
 
 ## Schedule
 
-**Course Dates:** Monday, August 23 – Friday, October 8, 2021 (7 weeks)<br>
+**Course Dates:** Monday, October 18 – Friday, December 10, 2021 (7 weeks)<br>
 **Class Times:** Monday, Wednesday, Friday at 1:30pm–3:20pm
 
 | Class | Topics                                                                                      |
@@ -110,8 +111,8 @@ Gain valuable real-world experience in DevOps through these hands-on activities.
 - [⭐️ Project Goals](#%e2%ad%90%ef%b8%8f-project-goals)
 - [📋 Project Requirements](#%f0%9f%93%8b-project-requirements)
 - [🗓 Deliverables & Due Dates](#%f0%9f%97%93-deliverables--due-dates)
-  - [2️⃣ **Blog Post**: Due October 8 @ 11:59pm](#2%ef%b8%8f%e2%83%a3-blog-post-due-129--1159pm)
-  - [3️⃣ **Repository**: Due October 8 @ 11:59pm](#3%ef%b8%8f%e2%83%a3-repository-due-129--1159pm)
+  - [2️⃣ **Blog Post**: Due December 10 @ 11:59pm](#2%ef%b8%8f%e2%83%a3-blog-post-due-129--1159pm)
+  - [3️⃣ **Repository**: Due December 10 @ 11:59pm](#3%ef%b8%8f%e2%83%a3-repository-due-129--1159pm)
 
 ## Evaluation
 
@@ -124,6 +125,10 @@ Gain valuable real-world experience in DevOps through these hands-on activities.
 - **Submit a [final project](Projects/FinalProject.md) on [Gradescope]** and pass according to the [rubric](Projects/FinalProject.md#rubric).
 - Actively **participate in class** and **abide by the attendance policy**.
 - **Make up all classwork** from all absences.
+
+## Class Recordings
+
+All class recordings will be available [here](https://bit.ly/droxey-vids) no later than 24 hours after the class session. For privacy reasons, please do not share the recordings outside of the ACS student body.
 
 [Alerts]: Lessons/Alerts.md
 [Architecture Diagrams]: Lessons/Diagrams.md
