@@ -54,6 +54,6 @@ _Description._
 
 
 <!-- do not edit below this line !-->
-[View]: https://tech-at-du.github.io/BEW-2.3-Web-Security/Slides/00-LESSON_NAME_TODO
+[View]: https://tech-at-du.github.io/ACS-3230-Web-Security/Slides/00-LESSON_NAME_TODO
 [Gradescope]: https://www.gradescope.com/courses/133579
 [Link]: https://en.wikipedia.org/wiki/HTTP_404
