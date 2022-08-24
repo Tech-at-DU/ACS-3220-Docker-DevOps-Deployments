@@ -43,25 +43,25 @@ _By the end of this course, you will be able to&hellip;_
 
 ## Schedule
 
-**Course Dates:** Monday, October 18 – Friday, December 10, 2021 (7 weeks)<br>
-**Class Times:** Monday, Wednesday, Friday at 1:30pm–3:20pm
+**Course Dates:** Wednesday, August 17 - Wednesday, October 5, 2022<br>
+**Class Times:** Monday, Wednesday at 4:00 PM PST - 6:45 PM PST
 
-| Class | Topics                                                                                      |
-| :---: | :------------------------------------------------------------------------------------------ |
-|   1   | [Course Orientation]                                                                        |
-|   2   | [How Containers Work]                                                                       |
-|   3   | 🔬 **Lab**: [Scripting in Bash]                                                              |
-|   4   | [Domains & DNS]                                                                             |
-|   5   | [Dockerizing Web Apps] + [Dockerizing Your Web App]                                         |
-|   6   | [Docker Compose] + 📝 **Lab**: [Review Worksheet]: _Containers, Orchestration, Optimization_ |
-|   7   | [Domains & Droplets]                                                                        |
-|   8   | [Your Personal PaaS]                                                                        |
-|   9   | [Alerts] + [Continuous Integration]                                                         |
-|  10   | [Project Kickoff]                                                                           |
-|  11   | [Advanced Container Orchestration Techniques]                                               |
-|  12   | [Docker Volumes]                                                                            |
-|  13   | NEW: [Docker Swarm]                                                                         |
-|  14   | [Course Review]                                                                             |
+| Class || Date | Topic |
+|:-----:|:-------:| - |
+| 1     | Aug, 17 |  [Course Orientation] & 🔬 **Lab**: [Scripting in Bash] |
+| 2     | Aug, 22 |  [How Containers Work] |
+| 3     | Aug, 24 |  [Domains & DNS] |
+| 4     | Aug, 29 |  [Dockerizing Web Apps] + [Dockerizing Your Web App]  |
+| -     | Sep, 5 |  [Docker Compose] + 📝 **Lab**: [Review Worksheet]: _Containers, Orchestration, Optimization_ |
+| 5     | Sep, 7 | [Domains & Droplets]                                                                        |
+| 6     | Sep,  12 |  [Your Personal PaaS]                                                                        |
+| 7     | Sep, 14 |   [Alerts] + [Continuous Integration]                                                         |
+| 8     | Sep, 19 |   [Project Kickoff]                                                                           |
+| 9     | Sep, 21 |  [Advanced Container Orchestration Techniques]                                               |
+| 10    | Sep, 26 | [Docker Volumes]                                                                            |
+| 11    | Sep, 28 |  NEW: [Docker Swarm]                                                                         |
+| 12    | Oct, 3 |  TBA |
+| 13    | Oct,  5 |  [Course Review] |
 
 ## Class Assignments
 
