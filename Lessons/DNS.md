@@ -44,7 +44,8 @@ Open breakout rooms for 10 minutes and experiment with `traceroute` command.
 
 Use the `traceroute` terminal command with the following websites and explore the output:
 - google.com
-- makeschool.com
+- dominican.edu
+- facebook.com
 - nsa.gov
 
 What's going on with the nsa.gov `traceroute`? Seems like a strange behavior...
