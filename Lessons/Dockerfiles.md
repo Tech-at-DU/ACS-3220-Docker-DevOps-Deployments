@@ -51,7 +51,7 @@ _While participating in class, fill out the definitions for your reference in th
 
 **TLDR**: _Everyone's computer is different, even if it looks the same._
 
-<p><img src="https://tech-at-du.github.io/BEW-2.2-Docker-DevOps-Deployments/Lessons/Images/bork-why.jpg" width="700"></p>
+<p><img src="https://tech-at-du.github.io/ACS-3220-Docker-DevOps-Deployments/Lessons/Images/bork-why.jpg" width="700"></p>
 
 <!-- v -->
 
@@ -59,19 +59,19 @@ _While participating in class, fill out the definitions for your reference in th
 
 A `Dockerfile` is distributed with the majority of Open Source projects to ensure you can run them on your unique machine.
 
-<p><img src="https://tech-at-du.github.io/BEW-2.2-Docker-DevOps-Deployments/Lessons/Images/bork-dependency.jpg" width="700"></p>
+<p><img src="https://tech-at-du.github.io/ACS-3220-Docker-DevOps-Deployments/Lessons/Images/bork-dependency.jpg" width="700"></p>
 
 <!-- v -->
 
 ### Images Are Made of Layers
 
-<p><img src="https://tech-at-du.github.io/BEW-2.2-Docker-DevOps-Deployments/Lessons/Images/bork-images.jpg" width="700"></p>
+<p><img src="https://tech-at-du.github.io/ACS-3220-Docker-DevOps-Deployments/Lessons/Images/bork-images.jpg" width="700"></p>
 
 <!-- v -->
 
 ### 1 Line of Code in Dockerfile = 1 Layer in Image
 
-<p><img src="https://tech-at-du.github.io/BEW-2.2-Docker-DevOps-Deployments/Lessons/Images/bork-layers.jpg" width="700"></p>
+<p><img src="https://tech-at-du.github.io/ACS-3220-Docker-DevOps-Deployments/Lessons/Images/bork-layers.jpg" width="700"></p>
 
 <!-- > -->
 
