@@ -65,10 +65,9 @@ Discussion questions (Google them if nobody knows):
 **PROTIP**: Many domains can be acquired for free using the [GitHub Student Developer Pack](https://education.github.com/pack?sort=popularity&tag=Domains)!
 
 Reference materials:
-- Great guide to [connect a namecheap.com domain to GitHub Pages](https://dev.to/pauljwil/connect-github-pages-to-your-namecheap-domain-4gjj)
+- **IMPORTANT**: Use this guide to [connect a domain to GitHub Pages](https://tech-at-du.github.io/ACS-3220-Docker-DevOps-Deployments/#/Guides/InfiniteGithubPages)
 - Documentation from GitHub that specifies [current IP address to use for your domains] (https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) `A Records`.
 - Troubleshooting [tips from GitHub for ideas to use when things don't work](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages#cname-errors)
--- NOTE: dropping the CNAME certificate and then readding seems to be the best quick debugging fix for namecheap.com
 
 Demonstrate a working set of `CNAME` and `A Record` properties using the `dig` command. As of June 2021, it should include four `A Records` and one `CNAME`.
 
