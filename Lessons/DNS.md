@@ -62,7 +62,7 @@ Discussion questions (Google them if nobody knows):
 
 ##### -- Instructor Demo --
 
-A .xyz domain name can be purchased from [namecheap.com for ~$1.](namecheap.com)
+**PROTIP**: Many domains can be acquired for free using the [GitHub Student Developer Pack](https://education.github.com/pack?sort=popularity&tag=Domains)!
 
 Reference materials:
 - Great guide to [connect a namecheap.com domain to GitHub Pages](https://dev.to/pauljwil/connect-github-pages-to-your-namecheap-domain-4gjj)
@@ -95,5 +95,5 @@ Use this time to ask questions about the tutorials and/or complete them in prepe
 
 <!-- do not edit below this line !-->
 [View]: https://tech-at-du.github.io/ACS-3230-Web-Security/Slides/00-LESSON_NAME_TODO
-[Gradescope]: https://www.gradescope.com/courses/133579
+[Gradescope]: https://www.gradescope.com/courses/428484
 [Link]: https://en.wikipedia.org/wiki/HTTP_404
