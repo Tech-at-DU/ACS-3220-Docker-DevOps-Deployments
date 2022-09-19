@@ -68,7 +68,7 @@ Justify your answer.
 
 <!-- > -->
 
-### 💻 [**05m**] **Activity**: Register Hosting Account on DigitalOcean      [watch demo](https://grain.com/app/recordings/9d30e058-a686-4f31-9233-fe5cfe386e6b)
+### 💻 [**05m**] **Activity**: Register Hosting Account on DigitalOcean <small>([watch demo](https://grain.com/app/recordings/9d30e058-a686-4f31-9233-fe5cfe386e6b))</small>
 
 1. Click the following link to create a free DigitalOcean account: [$100 Free Credit].
 1. Click the verification link DigitalOcean sent to your email.
