@@ -192,7 +192,7 @@ _We'll practice how to upload files manually, as well as how to take advantage o
 [Techdomains]: https://get.tech/faq#headingNine
 [Name.com]: https://www.name.com/support/articles/115004893508-Adding-an-A-record
 [Generating a New SSH Key and Adding it to the SSH Agent]: https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-[$100 Free Credit]: https://make.sc/digitalocean
+[$100 Free Credit]: https://bit.ly/do-acs
 [Course Learning Outcomes]: https://make.sc/bew2.2#Learning-Outcomes
 [continuous integration]: https://docs.google.com/presentation/d/18DNt9UXHaPUufQogj-mThiKpvhkJzXprnPmQtaptUp8
 [Docker Hub]: https://hub.docker.com
