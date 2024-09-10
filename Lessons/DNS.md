@@ -1,5 +1,5 @@
 <!-- Run as a slideshow: reveal-md README.md -w -->
-# 🐳 DNS & Domain Names `🚧 WIP`
+# 🐳 DNS & Domain Names
 
 ⭐️ **GOAL**: Learn about the domain name system and register your very own domain for use throughout the course.
 
@@ -24,6 +24,16 @@ By the end of this class you will be able to...
 
 <!-- > -->
 
+# 15m WARMUP: How I Domain Plz?
+
+In your own words, **without using ANY resources**, write out step by step the process you hypothesis one would have to take when registering a domain name.
+
+Talk it out with a partner to complete this activity using only your brains alone!
+
+When we return, be ready to paste the list of steps in chat and discuss.
+
+<!-- > -->
+
 ### 📚 [15m] Review DNS Comic
 
 ##### ACTIVITY
@@ -36,9 +46,9 @@ Upon return to the main room, the instructor should "trace" the example ping to 
 
 <!-- > -->
 
-### 🔥 [10m] Trace a request
+## 🔥 [10m] Trace a request
 
-##### ACTIVITY
+### ACTIVITY
 
 Open breakout rooms for 10 minutes and experiment with `traceroute` command.
 
@@ -58,9 +68,13 @@ Discussion questions (Google them if nobody knows):
 
 <!-- > -->
 
-### [30m] 🗣️ Register a Domain Name + Link to GitHub
+ # 🛏️ [10m] BREAK
 
-##### -- Instructor Demo --
+<!-- > -->
+
+## [30m] 🗣️ Register a Domain Name + Link to GitHub
+
+### -- Instructor Demo --
 
 **PROTIP**: Many domains can be acquired for free using the [GitHub Student Developer Pack](https://education.github.com/pack?sort=popularity&tag=Domains)!
 
@@ -82,15 +96,6 @@ ogjaylowe.github.io.	3600	IN	A	185.199.109.153
 ogjaylowe.github.io.	3600	IN	A	185.199.110.153
 ```
 
-
-<!-- > -->
-
-### 🛏️ [10m] BREAK
-
-<!-- > -->
-### 💪 [-m] Tutorial Q&A + Work Time
-
-Use this time to ask questions about the tutorials and/or complete them in preperation for the upcoming Docker lessons.
 
 <!-- do not edit below this line !-->
 [View]: https://tech-at-du.github.io/ACS-3230-Web-Security/Slides/00-LESSON_NAME_TODO
