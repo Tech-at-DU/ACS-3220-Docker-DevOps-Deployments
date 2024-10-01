@@ -111,8 +111,8 @@ Gain valuable real-world experience in DevOps through these hands-on activities.
 - [⭐️ Project Goals](#%e2%ad%90%ef%b8%8f-project-goals)
 - [📋 Project Requirements](#%f0%9f%93%8b-project-requirements)
 - [🗓 Deliverables & Due Dates](#%f0%9f%97%93-deliverables--due-dates)
-  - [2️⃣ **Blog Post**: Due December 10 @ 11:59pm](#2%ef%b8%8f%e2%83%a3-blog-post-due-129--1159pm)
-  - [3️⃣ **Repository**: Due December 10 @ 11:59pm](#3%ef%b8%8f%e2%83%a3-repository-due-129--1159pm)
+  - 2️⃣ **Blog Post**: Due Last Day of Class @ 11:59pm
+  - 3️⃣ **Repository**: Due Last Day of Class @ 11:59pm
 
 ## Evaluation
 
