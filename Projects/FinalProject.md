@@ -5,8 +5,8 @@
 1. [⭐️ Project Goals](#%E2%AD%90%EF%B8%8F-project-goals)
 1. [📋 Project Requirements](#%F0%9F%93%8B-project-requirements)
 1. [🗓 Deliverables & Due Dates](#%F0%9F%97%93-deliverables-%26-due-dates)
-   1. [1️⃣ **Blog Post**: Due 10/7 @ 11:59pm](#1%EF%B8%8F%E2%83%A3-%2a%2ablog-post%2a%2a%3A-due-10%2F7-%40-11%3A59pm)
-   1. [2️⃣ **Repository**: Due 10/7 @ 11:59pm](#2%EF%B8%8F%E2%83%A3-%2a%2arepository%2a%2a%3A-due-10%2F7-%40-11%3A59pm)
+   1. 1️⃣ **Blog Post**: Last Day of Class @ 11:59pm
+   1. 2️⃣ **Repository**: Last Day of Class @ 11:59pm
 
 ## ⭐️ Project Goals
 
@@ -36,10 +36,10 @@ Create a file in the root of your project named `requirements.md`, then paste th
 
 _All submissions are due at **11:59pm** unless otherwise specified._
 
-### 1️⃣ **Blog Post**: Due 10/7 @ 11:59pm
+### 1️⃣ **Blog Post**: Due Last Day of Class @ 11:59pm
 
 🔗 Submit your **[Blog Post Link](https://www.gradescope.com/courses/295888)** on Gradescope.
 
-### 2️⃣ **Repository**: Due 10/7 @ 11:59pm
+### 2️⃣ **Repository**: Due Last Day of Class @ 11:59pm
 
 🔗 Submit your **[Finished GitHub Repository](https://www.gradescope.com/courses/295888)** on Gradescope.
