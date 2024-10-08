@@ -6,9 +6,8 @@
 <!-- omit in toc -->
 ## ⏰ Agenda
 
-1. [[**15m**] Warm Up: Persistence & You](#%5B%2a%2a15m%2a%2a%5D-warm-up%3A-persistence-%26-you)
-1. [[**10m**] Discuss: Persistence & You](#%5B%2a%2a10m%2a%2a%5D-discuss%3A-persistence-%26-you)
-1. [[**30m**] TT: Docker Volumes](#%5B%2a%2a30m%2a%2a%5D-tt%3A-docker-volumes)
+1. [[**20m**] Warm Up: CNAME, Subdomain, Status]
+1. [[**30m**] TT: Docker Volumes]()
    1. [Getting to Know the Docker Filesystem](#getting-to-know-the-docker-filesystem)
    1. [Saving Data in the Filesystem](#saving-data-in-the-filesystem)
       1. [Say Hello to Docker Volumes](#say-hello-to-docker-volumes)
@@ -29,23 +28,19 @@
 
 <!-- > -->
 
-## [**15m**] Warm Up: Persistence & You
+## [**20m**] Warm Up: CNAME, Subdomain, Status
 
-Then, we'll break out into groups to discuss the following questions together:
+**Status pages are awesome --- but only if users can find them!** 
 
-- **What is _data persistence_?**
-- Name **at least use cases** where data persistence is necessary.
-- Name **at least two examples** of persistent data storage.
-- Have you ever had any **scenarios where your data did not persist** the way you wanted it to? **How did you fix it?**
+We can fix that using a simple technique provided by our domain registrar. Typically, status pages are located at `status.YOURDOMAIN.com` --- we will follow the same convention in our stack.
 
-Be sure to write down your answers --- we'll discuss after the activity!
+In breakout rooms, use [this documentation](https://www.namecheap.com/support/knowledgebase/article.aspx/9776/2237/how-to-create-a-subdomain-for-my-domain/#url) to add a new subdomain named `status.YOURDOMAIN.com` via a new `CNAME` record that will redirect users to an external URL of your choosing. Please use the URL for your UptimeRobot status page to complete this activity.
 
-<!-- > -->
+Your changes won't take affect immediately. 
 
-
-## [**10m**] Discuss: Persistence & You
-
-Call on members from each group and discuss answers together as a class.
+1. Why?
+1. How long should you wait before testing a new `CNAME` record?
+1. What techniques could you use to determine if it's working? List as many as you know!
 
 <!-- > -->
 
