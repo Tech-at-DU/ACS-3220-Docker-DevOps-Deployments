@@ -13,10 +13,7 @@
    1. [Saving Data in the Filesystem](#saving-data-in-the-filesystem)
       1. [Say Hello to Docker Volumes](#say-hello-to-docker-volumes)
       1. [Creating a Volume](#creating-a-volume)
-   1. [Final Tips & Tricks: Permissions](#final-tips-%26-tricks%3A-permissions)
-      1. [Doesn't Work](#doesn%27t-work)
-      1. [Works Great](#works-great)
-      1. [Here's Why](#here%27s-why)
+   1. [Tips & Tricks: Permissions, Image Size]()
 1. [[**10m**] BREAK](#%5B%2a%2a10m%2a%2a%5D-break)
 1. [[**15m**] Instructor Does: Install MongoDB on CapRover](#%5B%2a%2a15m%2a%2a%5D-instructor-does%3A-install-mongodb-on-caprover)
 1. [[**15m**] Students Do: Install MongoDB on CapRover](#%5B%2a%2a15m%2a%2a%5D-students-do%3A-install-mongodb-on-caprover)
@@ -166,6 +163,8 @@ Note that the host directory for a volume cannot be specified from a `Dockerfile
 ### Tips & Tricks: Smaller Docker Images
 
 Use the popular [docker-slim](https://github.com/kcq/docker-slim) package to build a compressed image for distrubution to Docker Hub or to deploy on your CapRover server.
+
+**PROTIP**: Try using the [Docker Slim GitHub Action](https://github.com/marketplace/actions/docker-slim-github-action)_in your containerized repositories to generate and push an optimized image every time you update your Dockerfile!
 
 ### Tips & Tricks: Permissions
 
