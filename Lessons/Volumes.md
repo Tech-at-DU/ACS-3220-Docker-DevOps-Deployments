@@ -140,7 +140,7 @@ There is another major use case for volumes that can only be accomplished throug
 **Example**:
 
 ```bash
-$ docker run -v /Users/dani/data:/data debian ls /data
+$ docker run -v /Users/droxey/:/data debian ls /data
 ```
 
 **What do you think this command does?**
