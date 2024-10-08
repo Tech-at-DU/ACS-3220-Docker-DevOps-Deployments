@@ -163,7 +163,11 @@ Note that the host directory for a volume cannot be specified from a `Dockerfile
 
 <!-- > -->
 
-### Final Tips & Tricks: Permissions
+### Tips & Tricks: Smaller Docker Images
+
+Use the popular [slim](https://github.com/slimtoolkit/slim?tab=readme-ov-file#demo-steps) package to build a compressed image for distrubution to Docker Hub or to deploy on your CapRover server.
+
+### Tips & Tricks: Permissions
 
 Often you'll need to set permissions and ownership on a volume, or initialize a volume with some default data or config files. It's important to be aware that anything after the `VOLUME` instruction in a `Dockerfile` will not be able to make changes to that volume!
 
