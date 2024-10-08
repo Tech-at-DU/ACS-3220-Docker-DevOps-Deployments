@@ -230,12 +230,6 @@ Following the demonstration, install MongoDB on your own CapRover instance.
 
 <!-- > -->
 
-## [**10m**] Finish Early? Learn More About Docker Volumes
-
-**OPTIONAL**: Complete this [KataCoda Tutorial](https://www.katacoda.com/courses/docker/persisting-data-using-volumes) to reinforce the concepts we discussed in class.
-
-<!-- > -->
-
 <!-- omit in toc -->
 ## 📚 Resources & Credits
 
