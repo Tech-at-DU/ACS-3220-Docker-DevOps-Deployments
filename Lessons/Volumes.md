@@ -165,7 +165,7 @@ Note that the host directory for a volume cannot be specified from a `Dockerfile
 
 ### Tips & Tricks: Smaller Docker Images
 
-Use the popular [slim](https://github.com/slimtoolkit/slim?tab=readme-ov-file#demo-steps) package to build a compressed image for distrubution to Docker Hub or to deploy on your CapRover server.
+Use the popular [docker-slim](https://github.com/kcq/docker-slim) package to build a compressed image for distrubution to Docker Hub or to deploy on your CapRover server.
 
 ### Tips & Tricks: Permissions
 
