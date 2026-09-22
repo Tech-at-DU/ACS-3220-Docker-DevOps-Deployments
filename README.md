@@ -59,7 +59,7 @@ _By the end of this course, you will be able to&hellip;_
 |   8   |  Sep, 19 | [Project Kickoff]                                                                            |     |
 |   9   |  Sep, 21 | [Advanced Container Orchestration Techniques]                                                |     |
 |   10  |  Sep, 26 | [Docker Volumes]                                                                             |     |
-|   11  |  Sep, 28 | NEW: [Docker Swarm]                                                                          |     |
+|   11  |  Sep, 28 | NEW: Docker Swarm                                                                            |     |
 |   12  |  Oct, 3  | TBA                                                                                          |     |
 |   13  |  Oct,  5 | [Course Review]                                                                              |     |
 
@@ -131,13 +131,10 @@ Gain valuable real-world experience in DevOps through these hands-on activities.
 All class recordings will be available [here](https://bit.ly/droxey-vids) no later than 24 hours after the class session. For privacy reasons, please do not share the recordings outside of the ACS student body.
 
 [Alerts]: Lessons/Alerts.md
-[Architecture Diagrams]: Lessons/Diagrams.md
 [Code Once, Run Anywhere]: Lessons/Containers.md
 [Continuous Integration]: https://docs.google.com/presentation/d/18DNt9UXHaPUufQogj-mThiKpvhkJzXprnPmQtaptUp8
 [Course Orientation]: Lessons/CourseOrientation.md
 [Docker Compose]: Lessons/Compose.md
-[Docker Hub]: Lessons/Hub.md
-[Docker Swarm]: Lessons/Swarm.md
 [Dockerizing Web Apps]: Lessons/WebServers.md
 [Dockerizing Your Web App]: Lessons/WebServers.md#60m--lab-writing-dockerfiles
 [Domains & DNS]: Lessons/DNS.md
@@ -146,8 +143,6 @@ All class recordings will be available [here](https://bit.ly/droxey-vids) no lat
 [Final Project]: Projects/FinalProject.md
 [Gradescope]: https://www.gradescope.com/courses/203051
 [How Containers Work]: Lessons/Dockerfiles.md
-[Multi-Stage Builds]: Lessons/Builds.md
-[Networking]: Lessons/Networking.md
 [Project Kickoff]: Projects/FinalProject.md
 [Review Worksheet]: https://www.gradescope.com/courses/203051/assignments/835995
 [Scripting in Bash]: https://github.com/veltman/clmystery
