@@ -4,7 +4,7 @@
 ⭐️ **GOAL**: Integrate [FreshPing] notifications for uptime monitoring. Utilize new integration by creating a status page for your PaaS.
 
 <!-- omit in toc -->
-## ⏰ Agenda (120m)
+## ⏰ Agenda (115m)
 
 - [[**10m**] **Warm Up**: Disaster Scenarios](#10m-warm-up-disaster-scenarios)
 - [[**10m**] **Discuss**: Disaster Scenarios](#10m-discuss-disaster-scenarios)
@@ -13,7 +13,6 @@
 - [[**10m**] **TT**: Automating Uptime Monitoring](#10m-tt-automating-uptime-monitoring)
 - [[**10m**] **Activity**: Set Up an Uptime Monitor](#10m-activity-set-up-an-uptime-monitor)
 - [[**10m**] **TT**: Status Pages](#10m-tt-status-pages)
-- [[**05m**] **Demo**: BEW 2.2 Dashboard](#05m-demo-bew-22-dashboard)
 - [[**10m**] **Activity**: Set Up a Status Page](#10m-activity-set-up-a-status-page)
 - [[**15m**] **Break**](#15m-break)
 - [[**10m**] **TT**: Resource Monitoring](#10m-tt-resource-monitoring)
@@ -25,24 +24,6 @@
   - [Step 2: Enable Alerts](#step-2-enable-alerts)
   - [Step 3: Discover the Dashboard](#step-3-discover-the-dashboard)
 - [[**10m**] **Wrap Up**: Poll / Q+A](#10m-wrap-up-poll--qa)
-
-<!-- > -->
-
-<!-- omit in toc -->
-<!-- ## 🏆 Objectives -->
-
-<!-- TODO: Objectives -->
-
-<!-- *By the end of this class, you'll be able to&hellip;* -->
-
-<!-- |   Level   | Verbs |
-| --------- | ----- |
-| **6: Create** | _design, formulate, build, invent, create, compose, generate, derive, modify, develop_ |
-| **5: Evaluate** | *choose, support, relate, determine, defend, compare, contrast, justify, support, convince, select* |
-| **4: Analyze** | *classify, break down, categorize, analyze, diagram, illustrate, criticize, simplify, associate* |
-| **3: Apply** | *calculate, predict, apply, solve, illustrate, use, demonstrate, determine, model, perform, present* |
-| **2: Understand** | *describe, explain, paraphrase, restate, summarize, contrast, interpret, discuss* |
-| **1: Remember** | *list, recite, outline, define, name, match, quote, recall, identify, label, recognize* | -->
 
 <!-- > -->
 
@@ -122,12 +103,6 @@ Use the remaining time to explore FreshPing's interface.
 - Should be hosted on a server other than the one(s) you're monitoring.
 - Help you learn more about how fast you respond to downtime.
 - Should always be hosted on a different server and network than the servers you're monitoring.
-
-<!-- > -->
-
-## [**05m**] **Demo**: BEW 2.2 Dashboard
-
-Demonstrate a status page that monitors all servers for the course: [make.sc/bew2.2-dashboard].
 
 <!-- > -->
 
@@ -234,7 +209,6 @@ Use the remaining time to answer questions before dismissing class.
 [StatusPage.io]: https://statuspage.io
 [Docker Swarms]: Swarm.md
 [FreshPing]: https://www.freshworks.com/website-monitoring/
-[make.sc/bew2.2-dashboard]: https://make.sc/bew2.2-dashboard
 [Resource Monitoring]: https://caprover.com/docs/resource-monitoring.html
 [Netdata]: https://github.com/netdata/netdata
 [Netdata User Base]: https://github.com/netdata/netdata#user-base
