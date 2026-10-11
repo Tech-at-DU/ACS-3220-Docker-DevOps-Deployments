@@ -206,16 +206,7 @@ We'll use a repo I created, [droxey/docker-django](https://github.com/droxey/doc
 
 Add a `docker-compose.yml` file to an existing project that requires both a web server and a database.
 
-**IMPORTANT: Be sure to add this file to a project you've already completed in another course. BEW 2.2 focuses on enhancing your existing codebases, rather than starting new repositories from scratch.**
-
-Past students have utilized projects from the following courses to complete this challenge:
-
-- **[FEW 2.3](https://make.sc/few2.3)**: Write a compose file for a React project that utilizes additional services.
-- **[SPD 1.5](https://make.sc/spd1.5)**: Simplify day to day development for your SPD team by ensuring your application and it's dependencies run the same on each team member's machine.
-- **[BEW 1.1](https://make.sc/bew1.1)**: Compose a Flask project that requires a MongoDB database.
-- **[ACS 1120](https://make.sc/bew1.2)**: Compose a Django project that requires a PostgreSQL database.
-- **[BEW 1.3](https://make.sc/bew1.3)**: Compose a Node project that requires a MongoDB database.
-- **[BEW 2.5](https://make.sc/bew2.5)**: Compose a Go web application that requires any external database.
+**IMPORTANT: Be sure to add this file to a project you've already completed in another course. ACS 3220 focuses on enhancing your existing codebases, rather than starting new repositories from scratch.**
 
 <!-- -->
 

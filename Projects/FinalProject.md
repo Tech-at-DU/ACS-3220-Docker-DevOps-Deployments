@@ -1,7 +1,5 @@
 # 🐳 Final Project: Dockerize a Codebase
 
-<!-- TODO: Add description. -->
-
 1. [⭐️ Project Goals](#%E2%AD%90%EF%B8%8F-project-goals)
 1. [📋 Project Requirements](#%F0%9F%93%8B-project-requirements)
 1. [🗓 Deliverables & Due Dates](#%F0%9F%97%93-deliverables-%26-due-dates)
