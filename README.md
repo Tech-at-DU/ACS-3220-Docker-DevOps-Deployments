@@ -63,7 +63,7 @@ _By the end of this course, you will be able to&hellip;_
 |   11  |  Dec, 1  | NEW: Docker Swarm                                                                            |     |
 |   12  |  Dec, 3  | TBA                                                                                          |     |
 |   -   |  Dec, 8  | 🔬 **Lab**                                                                                    |     |
-|   13  | Dec, 10  | [**Jeopardy**](Lessons/CourseReview.md#45m--activity-jeopardy)                               |     |
+|   13  | Dec, 10  | [Course Review] (Jeopardy)                                                                   |     |
 
 ## Class Assignments
 
