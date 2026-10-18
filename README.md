@@ -90,11 +90,11 @@ Gain valuable real-world experience in DevOps through these hands-on activities.
 
 | Name                                                 | More Info                                     |
 | ---------------------------------------------------- | --------------------------------------------- |
-| **Challenge 1**: Your Own Domain Name                | [Instructions](Projects/Challenges.md)        |
+| **Challenge 1**: Your Own Domain Name                | [Instructions](Lessons/DNS.md)                |
 | **Challenge 2**: Connect Your Domain to GitHub Pages | [Instructions](Guides/InfiniteGithubPages.md) |
-| **Challenge 3**: Dockerize Any Flask Application     | [Instructions](Projects/Challenges.md)        |
-| **Challenge 4**: Your First Server                   | [Instructions](Projects/Challenges.md)        |
-| **Challenge 5**: Compose a Web Application           | [Instructions](Projects/Challenges.md)        |
+| **Challenge 3**: Dockerize Any Flask Application     | [Instructions](Lessons/WebServers.md)         |
+| **Challenge 4**: Your First Server                   | [Instructions](Lessons/Droplets.md)           |
+| **Challenge 5**: Compose a Web Application           | [Instructions](Lessons/Compose.md)            |
 
 
 ### Final Project
