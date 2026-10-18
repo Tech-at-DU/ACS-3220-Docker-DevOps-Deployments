@@ -59,6 +59,7 @@ _By the end of this course, you will be able to&hellip;_
 |   8   |  Nov, 17 | [Project Kickoff]                                                                            |     |
 |   9   |  Nov, 19 | [Advanced Container Orchestration Techniques]                                                |     |
 |   10  |  Nov, 24 | [Docker Volumes]                                                                             |     |
+|   -   |  Nov, 26 | **Campus Holiday – No Class**                                                                |     |
 |   11  |  Dec, 1  | NEW: Docker Swarm                                                                            |     |
 |   12  |  Dec, 3  | TBA                                                                                          |     |
 |   13  |  Dec, 8  | [Course Review]                                                                              |     |
