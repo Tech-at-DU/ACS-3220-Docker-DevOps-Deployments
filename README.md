@@ -62,7 +62,8 @@ _By the end of this course, you will be able to&hellip;_
 |   -   |  Nov, 26 | **Campus Holiday – No Class**                                                                |     |
 |   11  |  Dec, 1  | NEW: Docker Swarm                                                                            |     |
 |   12  |  Dec, 3  | TBA                                                                                          |     |
-|   13  |  Dec, 8  | [Course Review]                                                                              |     |
+|   -   |  Dec, 8  | 🔬 **Lab**                                                                                    |     |
+|   13  | Dec, 10  | [**Jeopardy**](Lessons/CourseReview.md#45m--activity-jeopardy)                               |     |
 
 ## Class Assignments
 
