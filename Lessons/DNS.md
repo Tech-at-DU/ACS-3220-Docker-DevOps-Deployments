@@ -95,9 +95,3 @@ ogjaylowe.github.io.	3600	IN	A	185.199.111.153
 ogjaylowe.github.io.	3600	IN	A	185.199.109.153
 ogjaylowe.github.io.	3600	IN	A	185.199.110.153
 ```
-
-
-<!-- do not edit below this line !-->
-[View]: https://tech-at-du.github.io/ACS-3230-Web-Security/Slides/00-LESSON_NAME_TODO
-[Gradescope]: https://www.gradescope.com/courses/428484
-[Link]: https://en.wikipedia.org/wiki/HTTP_404

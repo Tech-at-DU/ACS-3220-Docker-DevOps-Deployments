@@ -85,7 +85,7 @@ Be prepared to give a 2-3 minute review of your topic to the class.
 1. Name it `first-app`.
 1. Go to "Deployment" tab and upload the tar file, then wait for the deployment to complete.
 1. The first time you build, it'll take a few minutes. After the build is completed, visit `https://first-app.dev.YOURDOMAIN.COM`.
-1. **CONGRATS! Your app is live!!** When complete, celebrate by posting the link to your working deployment on the `#bew2-2-docker` Slack channel!
+1. **CONGRATS! Your app is live!!** When complete, celebrate by posting the link to your working deployment on the `#acs-3220` Slack channel!
 
 <!-- > -->
 

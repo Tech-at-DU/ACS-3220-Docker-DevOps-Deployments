@@ -60,7 +60,7 @@ Ask each student to share one piece of feedback they received during the session
 
 ## [**15m**] ✅ Feedback Form
 
-Ask students to provide feedback on the course by visiting [make.sc/bew2.2-feedback](https://make.sc/bew2.2-feedback).
+Ask students to complete the end-of-term course evaluation.
 
 <!-- > -->
 

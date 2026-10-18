@@ -8,7 +8,7 @@
 
 - [[**10m**] ☀️ **Warmup**: SSH Keys](#10m-️-warmup-ssh-keys)
 - [[**20m**] 📚 **TT**: So, You're Ready to Deploy&hellip;](#20m--tt-so-youre-ready-to-deploy)
-  - [💬 [**05m**] **Discuss**: Decide What BEW 2.2 Should Use](#-05m-discuss-decide-what-bew-22-should-use)
+  - [💬 [**05m**] **Discuss**: Decide What ACS 3220 Should Use](#-05m-discuss-decide-what-acs-3220-should-use)
   - [💻 [**05m**] **Activity**: Register Hosting Account on DigitalOcean](#-05m-activity-register-hosting-account-on-digitalocean)
 - [[**05m**] 💻 **Activity**: Set Up CapRover CLI](#05m--activity-set-up-caprover-cli)
 - [[**20m**] 💻 **Challenge**: Set Up Your Personal PaaS](#20m--challenge-set-up-your-personal-paas)
@@ -37,7 +37,7 @@ test -f ~/.ssh/id_rsa && test -f ~/.ssh/id_rsa.pub && echo "Default SSH keys fou
 ```
 
 - **IF NO KEYS**: Break out and follow the [Generating a New SSH Key and Adding it to the SSH Agent](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) tutorial.
-- **IF KEYS EXIST**: Break out to read [TODO: Quick intro to SSH]. We will be discussing it later in class.
+- **IF KEYS EXIST**: You're set. We'll discuss SSH later in class.
 
 ## [**20m**] 📚 **TT**: So, You're Ready to Deploy&hellip;
 
@@ -60,7 +60,7 @@ test -f ~/.ssh/id_rsa && test -f ~/.ssh/id_rsa.pub && echo "Default SSH keys fou
 These are the major offerings available for backend web developers. To learn more, read [8 Different Types of Web Hosting Services](https://www.thebalancesmb.com/types-of-web-hosting-services-2532072).
 <!-- > -->
 
-### 💬 [**05m**] **Discuss**: Decide What BEW 2.2 Should Use
+### 💬 [**05m**] **Discuss**: Decide What ACS 3220 Should Use
 
 Review the [Course Learning Outcomes] on the syllabus and decide Which type of hosting you'd choose for projects in this course.
 
@@ -183,7 +183,7 @@ _We'll practice how to upload files manually, as well as how to take advantage o
 
 <!-- do not edit below this line -->
 [Gradescope]: https://www.gradescope.com/courses/133579
-[DigitalOcean]: https://make.sc/digitalocean
+[DigitalOcean]: https://www.digitalocean.com
 [SSDNodes]: https://www.ssdnodes.com
 [Heroku]: https://www.heroku.com
 [AWS]: https://aws.amazon.com
@@ -193,7 +193,7 @@ _We'll practice how to upload files manually, as well as how to take advantage o
 [Name.com]: https://www.name.com/support/articles/115004893508-Adding-an-A-record
 [Generating a New SSH Key and Adding it to the SSH Agent]: https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 [$100 Free Credit]: https://bit.ly/do-acs
-[Course Learning Outcomes]: https://make.sc/bew2.2#Learning-Outcomes
+[Course Learning Outcomes]: ../README.md#learning-outcomes
 [continuous integration]: https://docs.google.com/presentation/d/18DNt9UXHaPUufQogj-mThiKpvhkJzXprnPmQtaptUp8
 [Docker Hub]: https://hub.docker.com
 [Platform as a Service]: PaaS.md
