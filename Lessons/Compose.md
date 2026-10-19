@@ -23,7 +23,7 @@
 ## 🏆 Objectives
 
 1. Define _container orchestration_ and it's role when Dockerizing a web application's dependencies.
-1. Practice `docker-compose` through lab time and tutorials.
+1. Practice `docker compose` through lab time and tutorials.
 
 ## [**5m**] Attendance & Announcements
 
@@ -46,7 +46,7 @@ With Docker Compose, you use a **YAML file (`docker-compose.yml`) to configure y
 - **Preserve volume data** when containers are created.
   - Preserves volumes used by your services.
   - Ensures that any data you’ve created in volumes isn’t lost.
-  - When `docker-compose up` runs, if it finds any containers from previous runs, it copies the volumes from the old container to the new container.
+  - When `docker compose up` runs, if it finds any containers from previous runs, it copies the volumes from the old container to the new container.
 
 - Only **recreate containers if there's been a change**.
   - Caches the configuration used to create a container. When you restart a service that has not changed, Compose re-uses the existing containers. Re-using containers means that you can make changes to your environment very quickly.
@@ -75,20 +75,20 @@ Using Docker Compose is a **three step process**:
 
 1. Define a Dockerfile for each app
 1. Define the services that make up the app in `docker-compose.yml`.
-1. Run `docker-compose up` to run all your services together.
+1. Run `docker compose up` to run all your services together.
 
 Congratulations! You have **orchestrated your containers** --- **enabling each app to run together in an isolated environment**.
 
 ### Compose Commands
 
-Docker Compose (`docker-compose`) has several commands you can run to manage the lifecycle of the application:
+Docker Compose (`docker compose`) has several commands you can run to manage the lifecycle of the application:
 
 - Start, stop, and rebuild services
 - View the status of running services
 - Stream the log output of running services
 - Run a one-off command on a service
 
-Use this handy [DevHints.io cheatsheet](https://devhints.io/docker-compose) anytime you need to reference `docker-compose` commands.
+Use this handy [DevHints.io cheatsheet](https://devhints.io/docker-compose) anytime you need to reference `docker compose` commands.
 
 
 ## [**10m**] 😎 Break
@@ -97,7 +97,7 @@ Use this handy [DevHints.io cheatsheet](https://devhints.io/docker-compose) anyt
 
 **USE CASE**: You need to run Django with a database locally.
 
-**GOAL**: See how to use docker-compose in real life through a live code demonstration that walks you through the following tutorial: [Quickstart: Compose and Django](https://docs.docker.com/compose/django/).
+**GOAL**: See how to use docker compose in real life through a live code demonstration that walks you through the following tutorial: [Quickstart: Compose and Django](https://docs.docker.com/compose/django/).
 
 We'll use a repo I created, [droxey/docker-django](https://github.com/droxey/docker-django), as the starting point for this demonstration.
 
@@ -112,8 +112,6 @@ We'll use a repo I created, [droxey/docker-django](https://github.com/droxey/doc
 2. **Add the following configuration to the file.**
 
    ```yaml
-     version: '3.7'
-
      services:
        db:
          image: postgres
@@ -163,7 +161,7 @@ We'll use a repo I created, [droxey/docker-django](https://github.com/droxey/doc
 
 ### Step 3: Run Compose
 
-1. Run the [docker-compose up](https://docs.docker.com/compose/reference/up/) command from the top level directory for your project.
+1. Run the [docker compose up](https://docs.docker.com/compose/reference/up/) command from the top level directory for your project.
 
 2. Go to `http://localhost:8000` on a web browser to see the Hello World page!
 
@@ -200,7 +198,7 @@ We'll use a repo I created, [droxey/docker-django](https://github.com/droxey/doc
       Stopping docker-django_db_1  ... done
       ```
 
-  - Or, for a more elegant shutdown, switch to a different shell, and run [docker-compose down](https://docs.docker.com/compose/reference/down/)from the top level of your Django sample project directory.
+  - Or, for a more elegant shutdown, switch to a different shell, and run [docker compose down](https://docs.docker.com/compose/reference/down/)from the top level of your Django sample project directory.
 
 ## [**60m**] 🔭 Lab: Compose a Codebase
 

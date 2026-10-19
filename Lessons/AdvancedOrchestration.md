@@ -19,7 +19,7 @@
 
 ## Why You Should Know This (2 min)
 
-Today's plan focuses on **tips and tricks I learned using `docker-compose` IRL**!
+Today's plan focuses on **tips and tricks I learned using `docker compose` IRL**!
 
 ## Learning Objectives (3 min)
 
@@ -42,7 +42,7 @@ A `Dockerfile` contains everything needed to set up the environment to run your 
 
 ### One Command to Get Started
 
-When a new developer clones your repository, they should only need to run `docker-compose up` to get started.
+When a new developer clones your repository, they should only need to run `docker compose up` to get started.
 
 
 
@@ -51,7 +51,6 @@ When a new developer clones your repository, they should only need to run `docke
 Imagine you have a `docker-compose.yml` file in your project with the following configuration:
 
 ```yaml
-version: '2'
 services:
   ghost:
     image: ghost:${GHOST_VERSION}
@@ -59,11 +58,11 @@ services:
       - ${GHOST_PORT}:2368
 ```
 
-Set `GHOST_VERSION` and `GHOST_PORT` all in one command by running `GHOST_VERSION=2 GHOST_PORT=8080 docker-compose up`!
+Set `GHOST_VERSION` and `GHOST_PORT` all in one command by running `GHOST_VERSION=2 GHOST_PORT=8080 docker compose up`!
 
 ### Use `.env` For Local Environment Settings
 
-Compose supports declaring default environment variables in an environment file named `.env` placed in the folder where the `docker-compose` command is executed (current working directory).
+Compose supports declaring default environment variables in an environment file named `.env` placed in the folder where the `docker compose` command is executed (current working directory).
 
 **Syntax Rules**:
 
@@ -97,7 +96,7 @@ How do you get a container to start _before_ another?
 **`Dockerfile`**:
 
 ```Dockerfile
-FROM node:latest
+FROM node:24
 
 RUN mkdir -p /usr/src/project_name
 WORKDIR /usr/src/project_name
@@ -118,7 +117,6 @@ CMD /wait && npm start
 **`docker-compose.yml`**:
 
 ```yaml
-version: "3.3"
 services:
   mongo:
     container_name: mongo
@@ -133,15 +131,10 @@ services:
     build: .
     ports:
       - "3000:3000"
-    links:
-      - mongo
     depends_on:
       - mongo
     environment:
       WAIT_HOSTS: mongo:27017
-
-volumes:
-  mongo_data:
 ```
 
 ## BREAK (10 min)

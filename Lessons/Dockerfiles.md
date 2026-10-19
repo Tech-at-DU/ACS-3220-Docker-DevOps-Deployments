@@ -82,8 +82,8 @@ A `Dockerfile` is distributed with the majority of Open Source projects to ensur
 1. Use Alpine Linux as the base.
 1. Install the `fortune` package.
 1. Run the `fortune` command.
-1. Build container via `docker build .`
-1. Run container via `docker run .`
+1. Build container via `docker build -t fortune .`
+1. Run container via `docker run fortune`
 
 🌟 **GOAL**: Demonstrate running an existing `Dockerfile` from start to finish that tallies the number of GitHub stars you've earned in all your repositories!
 

@@ -124,7 +124,7 @@ In both cases, the output tells us that Docker has mounted `/data` inside the co
 You can also create volumes inside of a `Dockerfile`:
 
 ```Dockerfile
-FROM debian:wheezy
+FROM debian:trixie-slim
 VOLUME /data
 ```
 
@@ -140,7 +140,7 @@ There is another major use case for volumes that can only be accomplished throug
 **Example**:
 
 ```bash
-$ docker run -v /Users/droxey/:/data debian ls /data
+$ docker run -v /Users/dani/data:/data debian ls /data
 ```
 
 **What do you think this command does?**
@@ -172,7 +172,7 @@ Often you'll need to set permissions and ownership on a volume, or initialize a 
 Now that you know the above trick, why do you think the following `Dockerfile`  wouldn't work as expected?
 
 ```Dockerfile
-FROM debian:wheezy
+FROM debian:trixie-slim
 RUN useradd foo
 VOLUME /data
 RUN touch /data/x
@@ -186,9 +186,9 @@ RUN chown -R foo:foo /data
 To contrast, why do you think the following `Dockerfile` will work?
 
 ```Dockerfile
-FROM debian:wheezy
+FROM debian:trixie-slim
 RUN useradd foo
-RUN mkdir /data &amp;&amp; touch /data/x
+RUN mkdir /data && touch /data/x
 RUN chown -R foo:foo /data
 VOLUME /data
 ```
