@@ -25,7 +25,7 @@ In this course students will learn the two main flavors of Developer Operations 
 
 ## Prerequisites
 
-- [ACS 1120](https://bit.ly/acs1120)
+- [ACS 1220](https://github.com/Tech-at-DU/ACS-1220-Authentication-and-Associations)
 
 ## Course Specifics
 
@@ -110,11 +110,11 @@ Gain valuable real-world experience in DevOps through these hands-on activities.
 
 **_Review the [Requirements Document](Projects/FinalProject.md) to learn more about the project, including_**:
 
-- [⭐️ Project Goals](#%e2%ad%90%ef%b8%8f-project-goals)
-- [📋 Project Requirements](#%f0%9f%93%8b-project-requirements)
-- [🗓 Deliverables & Due Dates](#%f0%9f%97%93-deliverables--due-dates)
-  - 2️⃣ **Blog Post**: Due Last Day of Class @ 11:59pm
-  - 3️⃣ **Repository**: Due Last Day of Class @ 11:59pm
+- [⭐️ Project Goals](Projects/FinalProject.md#%e2%ad%90%ef%b8%8f-project-goals)
+- [📋 Project Requirements](Projects/FinalProject.md#%f0%9f%93%8b-project-requirements)
+- [🗓 Deliverables & Due Dates](Projects/FinalProject.md#%f0%9f%97%93-deliverables-amp-due-dates)
+  - 1️⃣ **Blog Post**: Due Last Day of Class @ 11:59pm
+  - 2️⃣ **Repository**: Due Last Day of Class @ 11:59pm
 
 ## Evaluation
 
@@ -138,7 +138,7 @@ All class recordings will be available [here](https://bit.ly/droxey-vids) no lat
 [Course Orientation]: Lessons/CourseOrientation.md
 [Docker Compose]: Lessons/Compose.md
 [Dockerizing Web Apps]: Lessons/WebServers.md
-[Dockerizing Your Web App]: Lessons/WebServers.md#60m--lab-writing-dockerfiles
+[Dockerizing Your Web App]: Lessons/WebServers.md#_60m-%f0%9f%94%ad-lab-writing-dockerfiles
 [Domains & DNS]: Lessons/DNS.md
 [Domains & Droplets]: Lessons/Droplets.md
 [Final Presentations]: Projects/FinalProject.md#Deliverables

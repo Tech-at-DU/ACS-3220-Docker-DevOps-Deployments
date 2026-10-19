@@ -202,7 +202,6 @@ Use the remaining time to answer questions before dismissing class.
 ## 📚 Resources & Credits
 
 - [Netdata] on GitHub
-- [Why should you use status page?](https://www.freshworks.com/statuspage/why-status-page/)
 
 <!-- do not edit below this line !-->
 [Gradescope]: https://www.gradescope.com/courses/133579
@@ -213,4 +212,4 @@ Use the remaining time to answer questions before dismissing class.
 [Netdata]: https://github.com/netdata/netdata
 [Netdata User Base]: https://github.com/netdata/netdata#user-base
 [Why Netdata]: https://github.com/netdata/netdata#why-netdata
-[Supported Collectors]: https://github.com/netdata/netdata/blob/master/collectors/COLLECTORS.md
+[Supported Collectors]: https://github.com/netdata/netdata/blob/master/src/collectors/COLLECTORS.md

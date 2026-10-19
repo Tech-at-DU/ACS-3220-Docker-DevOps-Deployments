@@ -57,7 +57,7 @@ test -f ~/.ssh/id_rsa && test -f ~/.ssh/id_rsa.pub && echo "Default SSH keys fou
 | **Cloud** | VPS enhanced with on-demand application scaling; flexible pricing based on usage. | [AWS] |
 | **PaaS** | Develop, run, and manage applications without the complexity of building and maintaining infrastructure typically associated with developing and launching an app. | [Heroku] |
 
-These are the major offerings available for backend web developers. To learn more, read [8 Different Types of Web Hosting Services](https://www.thebalancesmb.com/types-of-web-hosting-services-2532072).
+These are the major offerings available for backend web developers.
 <!-- > -->
 
 ### 💬 [**05m**] **Discuss**: Decide What ACS 3220 Should Use
@@ -169,7 +169,7 @@ _We'll practice how to upload files manually, as well as how to take advantage o
 1. Visit `http://IP_ADDRESS:3000` in your browser and log in with the default password: `captain42`.
 1. **Follow the instructions to complete the CapRover installation**:
 
-    <img src="Images/caprover-setup.png">
+    ![CapRover setup](Images/caprover-setup.png)
 
    1. Scroll to the bottom of the page and change the root domain to `dev.YOURDOMAIN.com`. You will need to log in again.
    1. Scroll to the bottom of the page. Click the Enable HTTPS button. Enter a valid email address.
@@ -190,12 +190,12 @@ _We'll practice how to upload files manually, as well as how to take advantage o
 [Wikipedia: Platform as a Service]: https://en.wikipedia.org/wiki/Platform_as_a_service
 [Namecheap]: https://www.namecheap.com/support/knowledgebase/article.aspx/319/2237/how-can-i-set-up-an-a-address-record-for-my-domain
 [Techdomains]: https://get.tech/faq#headingNine
-[Name.com]: https://www.name.com/support/articles/115004893508-Adding-an-A-record
+[Name.com]: https://www.name.com/support/articles/115004893508-adding-an-a-record
 [Generating a New SSH Key and Adding it to the SSH Agent]: https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 [$100 Free Credit]: https://bit.ly/do-acs
-[Course Learning Outcomes]: ../README.md#learning-outcomes
+[Course Learning Outcomes]: /README.md#learning-outcomes
 [continuous integration]: https://docs.google.com/presentation/d/18DNt9UXHaPUufQogj-mThiKpvhkJzXprnPmQtaptUp8
 [Docker Hub]: https://hub.docker.com
-[Platform as a Service]: PaaS.md
+[Platform as a Service]: /Lessons/PaaS.md
 [CapRover One-Click App]: https://marketplace.digitalocean.com/apps/caprover
-[next section]: PaaS.md
+[next section]: /Lessons/PaaS.md
