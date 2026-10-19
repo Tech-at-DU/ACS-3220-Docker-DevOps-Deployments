@@ -77,7 +77,7 @@ These manual techniques work great when you're sitting in front of your computer
 
 You'll use [Uptime Kuma], a free, open-source, self-hosted monitoring tool. It can:
 
-- Check HTTP(s), TCP, ping, DNS, Docker containers, and more, as often as every 20 seconds.
+- Check HTTP(s), TCP, ping, DNS, Docker containers, and more, as often as every 20 seconds (or faster, though Uptime Kuma warns that may hurt performance).
 - Send notifications through 90+ services, including Email (SMTP), Discord, Slack, and Telegram.
 - Publish public status pages.
 
@@ -104,8 +104,8 @@ It catches problems with the **app**: a crashed container, a bad deploy, a 5xx e
 1. Choose **Apps** from the sidebar, then click **One-Click Apps/Databases**.
 1. Search for `Uptime Kuma` and select it.
 1. Enter `uptime` as the **App Name**.
-1. Set **Uptime Kuma Version** to `2`, then click **Deploy**.
-1. When the deploy finishes, open the `uptime` app, click **Enable HTTPS** on the **HTTP Settings** tab, then turn on **Force HTTPS**.
+1. Change **Uptime Kuma Version** from the default `2.3.2` to `2.5.6`, then click **Deploy**.
+1. When the deploy finishes, open the `uptime` app. On the **HTTP Settings** tab, click **Enable HTTPS**, check **Force HTTPS by redirecting all HTTP traffic to HTTPS**, then click **Save & Restart**.
 
 > **PROTIP**: The one-click app routes traffic to the container's port `3001`, turns on WebSocket support (Uptime Kuma needs it), and stores everything in a persistent volume mounted at `/app/data`. Your monitors survive restarts and updates. You'll learn how volumes work in the [Volumes](Volumes.md) lesson.
 
@@ -141,9 +141,9 @@ A monitor that nobody hears is just a dashboard. Send alerts somewhere you'll se
 **Test the alert by stopping your app**:
 
 1. In CapRover, open `first-app` and go to the **App Configs** tab.
-1. Set **Instance Count** to `0`, then click **Save & Update**. Your app is now offline.
+1. Set **Instance Count** to `0`, then click **Save & Restart**. Your app is now offline.
 1. Watch Uptime Kuma. Within about a minute, `first-app` turns red and you get a **Down** notification.
-1. Set **Instance Count** back to `1` and click **Save & Update**.
+1. Set **Instance Count** back to `1` and click **Save & Restart**.
 1. Wait for the monitor to turn green and for the **Up** notification.
 1. Post a screenshot of your **Down** notification in the class channel.
 
@@ -152,7 +152,7 @@ A monitor that nobody hears is just a dashboard. Send alerts somewhere you'll se
 <details>
 <summary>Answer</summary>
 
-Uptime Kuma checks once per **Heartbeat Interval** (60 seconds by default), so an outage can go unnoticed until the next check. Lowering the interval (down to 20 seconds) catches outages sooner but adds traffic and makes alerts noisier. Raising **Retries** above `0` does the opposite: fewer false alarms from one slow response, but a slower alert.
+Uptime Kuma checks once per **Heartbeat Interval** (60 seconds by default), so an outage can go unnoticed until the next check. Lowering the interval (20 seconds is the recommended minimum) catches outages sooner but adds traffic and makes alerts noisier. Raising **Retries** above `0` does the opposite: fewer false alarms from one slow response, but a slower alert.
 
 </details>
 
@@ -288,8 +288,8 @@ Use the remaining time to answer questions before dismissing class.
 <summary>Notes for instructors and curriculum authors</summary>
 
 - This lab used FreshPing until FreshPing shut down free accounts on 2026-03-06. It switched to self-hosted Uptime Kuma in October 2026.
-- Uptime Kuma runs from CapRover's official `uptime-kuma` one-click app: image `louislam/uptime-kuma`, container HTTP port `3001`, WebSocket support on, volume `$$cap_appname-data:/app/data`. As of October 2026, the one-click app's default version is `2.3.2`, while upstream's latest release is `2.5.6`. Students set the version to `2`, the upstream-recommended tag that tracks the latest v2 release.
-- The "stop the app" step sets CapRover's **Instance Count** to `0`. CapRover's docs describe instance count but don't explicitly cover `0`, so do a dry run on a fresh droplet before class.
+- Uptime Kuma runs from CapRover's official `uptime-kuma` one-click app: image `louislam/uptime-kuma`, container HTTP port `3001`, WebSocket support on, volume `$$cap_appname-data:/app/data`. As of October 2026, the one-click default is `2.3.2`, which is affected by GHSA-wf2j-5mc7-5c4w (fixed in 2.5.4). Students pin `2.5.6`, the latest stable release, so class runs a reproducible build. Check the releases page the week before class and bump the pin if a security release lands. Avoid `latest`; it still points to v1.
+- The "stop the app" step sets **Instance Count** to `0`. CapRover's source accepts 0 (AppsDataStore.ts `instanceCount >= 0`; DockerApi.ts sets Swarm replicas to 0) and the UI input has no minimum, but the docs don't mention 0, so do a dry run on a fresh droplet before class.
 - The monitor shares a droplet with the apps it watches (see the BE AWARE callout). If time allows, have students add a second monitor from a different server, or from a teammate's Uptime Kuma, to show off-box monitoring.
 - Discord is the suggested notification channel because it needs no SMTP credentials. Students without Discord can pick any other notification type.
 
