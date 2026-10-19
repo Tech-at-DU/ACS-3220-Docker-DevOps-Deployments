@@ -91,5 +91,5 @@ Use the remainder of class time to continue working on your final project, due n
 
 <!-- do not edit below this line !-->
 [Let's Encrypt]: https://letsencrypt.org
-[CapRover Documentation]: https://caprover.com/docs
+[CapRover Documentation]: https://caprover.com/docs/get-started.html
 [Gradescope]: https://www.gradescope.com/courses/133579

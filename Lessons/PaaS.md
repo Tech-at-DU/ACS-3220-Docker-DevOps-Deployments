@@ -40,7 +40,7 @@ Walk through the features on the [CapRover] website.
 
 The image below walks through using [CapRover] to deploy:
 
-<p><img src="https://caprover.com/img/captain-in-one-picture.png"></p>
+<p><img src="https://raw.githubusercontent.com/caprover/caprover-website/master/graphics/captain-in-one-picture.png"></p>
 
 <!-- > -->
 

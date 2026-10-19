@@ -152,6 +152,6 @@ Continue working on your final project, presentation, or blog post. Your instruc
 
 ## Additional Resources
 
-1. **[Exception Perceptions: 4 Best Practices for Using Docker Compose](https://blog.sentry.io/2019/02/28/exception-perceptions-docker)**
+1. **[Exception Perceptions: 4 Best Practices for Using Docker Compose](https://blog.sentry.io/exception-perceptions-docker/)**
 2. **[Share Compose Configurations Between Files and Projects](https://docs.docker.com/compose/extends/)**
 3. **[Control Startup and Shutdown Order in Compose](https://docs.docker.com/compose/startup-order/)
