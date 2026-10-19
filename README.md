@@ -133,7 +133,6 @@ Gain valuable real-world experience in DevOps through these hands-on activities.
 All class recordings will be available [here](https://bit.ly/droxey-vids) no later than 24 hours after the class session. For privacy reasons, please do not share the recordings outside of the ACS student body.
 
 [Alerts]: Lessons/Alerts.md
-[Code Once, Run Anywhere]: Lessons/Containers.md
 [Continuous Integration]: https://docs.google.com/presentation/d/18DNt9UXHaPUufQogj-mThiKpvhkJzXprnPmQtaptUp8
 [Course Orientation]: Lessons/CourseOrientation.md
 [Docker Compose]: Lessons/Compose.md

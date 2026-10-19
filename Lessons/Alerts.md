@@ -112,7 +112,7 @@ Use the remaining time to explore FreshPing's interface.
 1. Add `captain.dev.YOURDOMAIN.com` to the status page.
 1. Paste the URL for your status page in chat.
 
-We will be adding additional alerting and status indicators when we discuss [Docker Swarms].
+We will be adding additional alerting and status indicators when we discuss Docker Swarm.
 
 <!-- > -->
 
@@ -207,7 +207,6 @@ Use the remaining time to answer questions before dismissing class.
 <!-- do not edit below this line !-->
 [Gradescope]: https://www.gradescope.com/courses/133579
 [StatusPage.io]: https://statuspage.io
-[Docker Swarms]: Swarm.md
 [FreshPing]: https://www.freshworks.com/website-monitoring/
 [Resource Monitoring]: https://caprover.com/docs/resource-monitoring.html
 [Netdata]: https://github.com/netdata/netdata
