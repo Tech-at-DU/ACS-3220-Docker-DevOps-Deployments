@@ -65,4 +65,4 @@ Ask students to complete the end-of-term course evaluation.
 <!-- > -->
 
 
-[Jeopardy Board]: https://docs.google.com/presentation/d/1lO8tMa0Dau82rE0rhMB3O8N6hHBeKZE8v00iRCGl9u0/edit#slide=id.g2af4f3288_00
+[Jeopardy Board]: https://docs.google.com/presentation/d/1iHTR_oGHzb-VslmAL-1lLLMPHD8s3Y0ouJUjLO9XBds/edit

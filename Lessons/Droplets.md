@@ -194,7 +194,7 @@ _We'll practice how to upload files manually, as well as how to take advantage o
 [Generating a New SSH Key and Adding it to the SSH Agent]: https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 [$100 Free Credit]: https://bit.ly/do-acs
 [Course Learning Outcomes]: /README.md#learning-outcomes
-[continuous integration]: https://docs.google.com/presentation/d/18DNt9UXHaPUufQogj-mThiKpvhkJzXprnPmQtaptUp8
+[continuous integration]: https://docs.google.com/presentation/d/1ChaCVdjzvMehwDkSZJkqJbepLB38052nu29q6QHnEpk/edit
 [Docker Hub]: https://hub.docker.com
 [Platform as a Service]: /Lessons/PaaS.md
 [CapRover One-Click App]: https://marketplace.digitalocean.com/apps/caprover
