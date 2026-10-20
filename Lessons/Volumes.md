@@ -34,7 +34,7 @@
 
 We can fix that using a simple technique provided by our domain registrar. Typically, status pages are located at `status.YOURDOMAIN.com` --- we will follow the same convention in our stack.
 
-In breakout rooms, use [this documentation](https://www.namecheap.com/support/knowledgebase/article.aspx/9776/2237/how-to-create-a-subdomain-for-my-domain/#url) to add a new subdomain named `status.YOURDOMAIN.com` via a new `CNAME` record that will redirect users to an external URL of your choosing. Please use the URL for your UptimeRobot status page to complete this activity.
+In breakout rooms, use [this documentation](https://www.namecheap.com/support/knowledgebase/article.aspx/9776/2237/how-to-create-a-subdomain-for-my-domain/#url) to add a new subdomain named `status.YOURDOMAIN.com` via a new `CNAME` record that will redirect users to an external URL of your choosing. Please use the URL for the Uptime Kuma status page you created in the [Alerts](Alerts.md) lesson to complete this activity.
 
 Your changes won't take affect immediately. 
 

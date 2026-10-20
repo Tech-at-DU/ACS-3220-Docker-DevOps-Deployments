@@ -1,17 +1,18 @@
 <!-- Run as a slideshow: reveal-md README.md -w -->
 # 🐳 Alerts & Notifications
 
-⭐️ **GOAL**: Integrate [FreshPing] notifications for uptime monitoring. Utilize new integration by creating a status page for your PaaS.
+⭐️ **GOAL**: Self-host [Uptime Kuma] on your CapRover PaaS to monitor uptime, send alert notifications, and publish a status page. Then prove your alerts work by taking an app down on purpose.
 
 <!-- omit in toc -->
-## ⏰ Agenda (115m)
+## ⏰ Agenda (120m)
 
 - [[**10m**] **Warm Up**: Disaster Scenarios](#10m-warm-up-disaster-scenarios)
-- [[**10m**] **Discuss**: Disaster Scenarios](#10m-discuss-disaster-scenarios)
+- [[**5m**] **Discuss**: Disaster Scenarios](#5m-discuss-disaster-scenarios)
 - [[**10m**] **TT**: Avoiding Disaster](#10m-tt-avoiding-disaster)
   - [Command Line Tools](#command-line-tools)
 - [[**10m**] **TT**: Automating Uptime Monitoring](#10m-tt-automating-uptime-monitoring)
 - [[**10m**] **Activity**: Set Up an Uptime Monitor](#10m-activity-set-up-an-uptime-monitor)
+- [[**10m**] **Activity**: Send and Test an Alert](#10m-activity-send-and-test-an-alert)
 - [[**10m**] **TT**: Status Pages](#10m-tt-status-pages)
 - [[**10m**] **Activity**: Set Up a Status Page](#10m-activity-set-up-a-status-page)
 - [[**15m**] **Break**](#15m-break)
@@ -35,7 +36,7 @@ Example scenario: _The server lost power due to a severe thunderstorm._
 
 <!-- > -->
 
-## [**10m**] **Discuss**: Disaster Scenarios
+## [**5m**] **Discuss**: Disaster Scenarios
 
 Call on students and ask them to contribute what they discussed to a running list of disaster scenarios.
 
@@ -72,17 +73,88 @@ ping captain.dev.YOURDOMAIN.COM
 
 These manual techniques work great when you're sitting in front of your computer. But what if you're AFK? How will we know the server is down?
 
+**Scenario**: The hosted uptime checker your team relied on just shut down its free plan. Your lead wants a replacement running on the company PaaS by the end of the day, with alerts going somewhere the on-call engineer will actually see them.
+
+You'll use [Uptime Kuma], a free, open-source, self-hosted monitoring tool. It can:
+
+- Check HTTP(s), TCP, ping, DNS, Docker containers, and more, as often as every 20 seconds (or faster, though Uptime Kuma warns that may hurt performance).
+- Send notifications through 90+ services, including Email (SMTP), Discord, Slack, and Telegram.
+- Publish public status pages.
+
+CapRover ships an official **Uptime Kuma** one-click app, so you can deploy it in a few clicks.
+
+> **BE AWARE**: A self-hosted monitor shares the fate of the server it runs on. If your droplet loses power, Uptime Kuma goes down with it, and nobody gets an alert. In production, run your monitor on a **different server and network** than the apps it watches.
+
+> **ASK AUDIENCE:** You install Uptime Kuma on the same droplet as `first-app`. Which of the disaster scenarios from the warm up would it catch, and which would it miss?
+
+<details>
+<summary>Answer</summary>
+
+It catches problems with the **app**: a crashed container, a bad deploy, a 5xx error, an expired certificate. It misses problems with the **server**: power loss, a full disk that takes down Docker, or a provider network outage. Uptime Kuma goes down too, so it can't send the alert. To cover those, run a second monitor somewhere else.
+
+</details>
+
 <!-- > -->
 
 ## [**10m**] **Activity**: Set Up an Uptime Monitor
 
-1. Go to [FreshPing] and use the form on the left to create a new account:
-   1. Enter `https://captain.dev.YOURDOMAIN.COM` in the first field.
-   1. Enter your email address in the second field.
-1. Click the activation link sent to your email. _Required to receive alerts reliably._
-1. **FreshPing adds your first server automatically. You're all done!**
+**Deploy Uptime Kuma**:
 
-Use the remaining time to explore FreshPing's interface.
+1. Log in to CapRover at `https://captain.dev.YOURDOMAIN.COM`.
+1. Choose **Apps** from the sidebar, then click **One-Click Apps/Databases**.
+1. Search for `Uptime Kuma` and select it.
+1. Enter `uptime` as the **App Name**.
+1. Change **Uptime Kuma Version** from the default `2.3.2` to `2.5.6`, then click **Deploy**.
+1. When the deploy finishes, open the `uptime` app. On the **HTTP Settings** tab, click **Enable HTTPS**, check **Force HTTPS by redirecting all HTTP traffic to HTTPS**, then click **Save & Restart**.
+
+> **PROTIP**: The one-click app routes traffic to the container's port `3001`, turns on WebSocket support (Uptime Kuma needs it), and stores everything in a persistent volume mounted at `/app/data`. Your monitors survive restarts and updates. You'll learn how volumes work in the [Volumes](Volumes.md) lesson.
+
+**Create your account and first monitor**:
+
+1. Visit `https://uptime.dev.YOURDOMAIN.COM`.
+1. If Uptime Kuma asks which database to use, choose **SQLite**.
+1. Create your admin account. **Use a strong password**, since this dashboard is on the public internet.
+1. Click **Add New Monitor** and enter:
+   - **Monitor Type**: `HTTP(s)`
+   - **Friendly Name**: `first-app`
+   - **URL**: `https://first-app.dev.YOURDOMAIN.COM` (the app you deployed in [Your Personal PaaS](PaaS.md). If you deleted it, use any app you have running on CapRover.)
+   - **Heartbeat Interval**: leave the default of `60` seconds.
+1. Click **Save**. The monitor turns green once its first check passes.
+
+<!-- > -->
+
+## [**10m**] **Activity**: Send and Test an Alert
+
+A monitor that nobody hears is just a dashboard. Send alerts somewhere you'll see them, then break something on purpose to prove it works.
+
+**Set up a notification**:
+
+1. In Uptime Kuma, open your `first-app` monitor and click **Edit**.
+1. Under **Notifications**, click **Set Up Notification**.
+1. Choose a **Notification Type** you can receive on your phone. **Discord** is the quickest: in a Discord server you own, open **Server Settings** > **Integrations** > **Webhooks**, create a webhook, then click **Copy Webhook URL** and paste it into the **Discord Webhook URL** field. ([Discord's webhook guide])
+1. Check **Default enabled** and **Apply on all existing monitors**.
+1. Click **Test**. You should get a test message within a few seconds.
+1. Click **Save** on the notification, then **Save** on the monitor.
+
+> **PROTIP**: Prefer email, Slack, or Telegram? Choose that **Notification Type** instead. Uptime Kuma supports [90+ notification services].
+
+**Test the alert by stopping your app**:
+
+1. In CapRover, open `first-app` and go to the **App Configs** tab.
+1. Set **Instance Count** to `0`, then click **Save & Restart**. Your app is now offline.
+1. Watch Uptime Kuma. Within about a minute, `first-app` turns red and you get a **Down** notification.
+1. Set **Instance Count** back to `1` and click **Save & Restart**.
+1. Wait for the monitor to turn green and for the **Up** notification.
+1. Post a screenshot of your **Down** notification in the class channel.
+
+> **ASK AUDIENCE:** You stopped the app, but the alert didn't fire right away. Why the delay? How could you make it faster, and what's the tradeoff?
+
+<details>
+<summary>Answer</summary>
+
+Uptime Kuma checks once per **Heartbeat Interval** (60 seconds by default), so an outage can go unnoticed until the next check. Lowering the interval (20 seconds is the recommended minimum) catches outages sooner but adds traffic and makes alerts noisier. Raising **Retries** above `0` does the opposite: fewer false alarms from one slow response, but a slower alert.
+
+</details>
 
 <!-- > -->
 
@@ -108,9 +180,12 @@ Use the remaining time to explore FreshPing's interface.
 
 ## [**10m**] **Activity**: Set Up a Status Page
 
-1. Add a status page on [FreshPing].
-1. Add `captain.dev.YOURDOMAIN.com` to the status page.
-1. Paste the URL for your status page in chat.
+1. In Uptime Kuma, click **Status Pages**, then **New Status Page**.
+1. Enter a **Name** and a **Slug** (for example, `acs3220`), then click **Next**.
+1. Under **Add a monitor**, select `first-app`, then click **Save**.
+1. Paste the URL for your status page in chat. It looks like `https://uptime.dev.YOURDOMAIN.COM/status/acs3220`.
+
+> **PROTIP**: Hang on to this URL. In the [Volumes](Volumes.md) lesson, you'll point `status.YOURDOMAIN.com` at it.
 
 We will be adding additional alerting and status indicators when we discuss Docker Swarm.
 
@@ -199,14 +274,33 @@ Use the remaining time to answer questions before dismissing class.
 
 
 <!-- omit in toc -->
-## 📚 Resources & Credits
+## Additional Resources
 
+- [Uptime Kuma] on GitHub, plus its [wiki](https://github.com/louislam/uptime-kuma/wiki)
+- Uptime Kuma [status page docs](https://github.com/louislam/uptime-kuma/wiki/Status-Page)
+- CapRover [One-Click Apps](https://caprover.com/docs/one-click-apps.html)
 - [Netdata] on GitHub
+
+<!-- omit in toc -->
+## For curriculum authors
+
+<details>
+<summary>Notes for instructors and curriculum authors</summary>
+
+- This lab used FreshPing until FreshPing shut down free accounts on 2026-03-06. It switched to self-hosted Uptime Kuma in October 2026.
+- Uptime Kuma runs from CapRover's official `uptime-kuma` one-click app: image `louislam/uptime-kuma`, container HTTP port `3001`, WebSocket support on, volume `$$cap_appname-data:/app/data`. As of October 2026, the one-click default is `2.3.2`, which is affected by GHSA-wf2j-5mc7-5c4w (fixed in 2.5.4). Students pin `2.5.6`, the latest stable release, so class runs a reproducible build. Check the releases page the week before class and bump the pin if a security release lands. Avoid `latest`; it still points to v1.
+- The "stop the app" step sets **Instance Count** to `0`. CapRover's source accepts 0 (AppsDataStore.ts `instanceCount >= 0`; DockerApi.ts sets Swarm replicas to 0) and the UI input has no minimum, but the docs don't mention 0, so do a dry run on a fresh droplet before class.
+- The monitor shares a droplet with the apps it watches (see the BE AWARE callout). If time allows, have students add a second monitor from a different server, or from a teammate's Uptime Kuma, to show off-box monitoring.
+- Discord is the suggested notification channel because it needs no SMTP credentials. Students without Discord can pick any other notification type.
+
+</details>
 
 <!-- do not edit below this line !-->
 [Gradescope]: https://www.gradescope.com/courses/133579
 [StatusPage.io]: https://statuspage.io
-[FreshPing]: https://www.freshworks.com/website-monitoring/
+[Uptime Kuma]: https://github.com/louislam/uptime-kuma
+[90+ notification services]: https://github.com/louislam/uptime-kuma/tree/master/server/notification-providers
+[Discord's webhook guide]: https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks
 [Resource Monitoring]: https://caprover.com/docs/resource-monitoring.html
 [Netdata]: https://github.com/netdata/netdata
 [Netdata User Base]: https://github.com/netdata/netdata#user-base
