@@ -48,7 +48,7 @@ _By the end of this course, you will be able to&hellip;_
 
 | Class |   Date   | Topic                                                                                        |     |
 |:-----:|:--------:| -------------------------------------------------------------------------------------------- | --- |
-|   1   |  Oct, 20 | [Course Orientation] & 🔬 **Lab**: [Scripting in Bash]                                       |     |
+|   1   |  Oct, 20 | [Course Orientation]                                                                       |     |
 |   2   |  Oct, 22 | [How Containers Work]                                                                        |     |
 |   3   |  Oct, 27 | [Domains & DNS]                                                                              |     |
 |   4   |  Oct, 29 | [Dockerizing Web Apps] + [Dockerizing Your Web App]                                          |     |
@@ -146,7 +146,6 @@ All class recordings will be available [here](https://bit.ly/droxey-vids) no lat
 [How Containers Work]: Lessons/Dockerfiles.md
 [Project Kickoff]: Projects/FinalProject.md
 [Review Worksheet]: https://www.gradescope.com/courses/203051/assignments/835995
-[Scripting in Bash]: https://github.com/veltman/clmystery
 [Security]: Lessons/Security.md
 [Volumes]: Lessons/Volumes.md
 [Your Personal PaaS]: Lessons/PaaS.md
