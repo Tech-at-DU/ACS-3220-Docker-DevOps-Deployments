@@ -1,4 +1,4 @@
-<!-- Run as a slideshow: reveal-md README.md -w -->
+<!-- Run as a slideshow: reveal-md Lessons/PaaS.md -w -->
 # 🐳 Your Personal PaaS
 
 ⭐️ **GOAL**: Deploy your first application on CapRover!

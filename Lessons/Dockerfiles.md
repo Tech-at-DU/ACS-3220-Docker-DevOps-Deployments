@@ -92,10 +92,6 @@ A `Dockerfile` is distributed with the majority of Open Source projects to ensur
 
 <!-- > -->
 
-<!-- ## 📚 Resources -->
-
-<!-- > -->
-
 ## 🙏 Credits
 
 - [Julia Evans (@bork)](https://twitter.com/b0rk): _Photo credit for comics used in lesson plan._

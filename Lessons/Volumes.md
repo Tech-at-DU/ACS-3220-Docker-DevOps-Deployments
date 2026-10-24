@@ -1,4 +1,4 @@
-<!-- Run as a slideshow: reveal-md README.md -w -->
+<!-- Run as a slideshow: reveal-md Lessons/Volumes.md -w -->
 # 🐳 Docker Volumes
 
 ⭐️ **GOAL**: Learn about all the different ways you can persist data using Docker --- then try it on your own server!
