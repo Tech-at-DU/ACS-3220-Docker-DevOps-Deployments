@@ -1,4 +1,4 @@
-<!-- Run as a slideshow: reveal-md README.md -w -->
+<!-- Run as a slideshow: reveal-md Lessons/Droplets.md -w -->
 # 🐳 Domains & Droplets
 
 ⭐️ **GOAL**: Create and configure a CapRover DO droplet for use in following class sessions.
