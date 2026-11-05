@@ -206,8 +206,6 @@ Add a `docker-compose.yml` file to an existing project that requires both a web 
 
 **IMPORTANT: Be sure to add this file to a project you've already completed in another course. ACS 3220 focuses on enhancing your existing codebases, rather than starting new repositories from scratch.**
 
-<!-- -->
-
 <!-- omit in toc -->
 ## 📚 Resources & Credits
 

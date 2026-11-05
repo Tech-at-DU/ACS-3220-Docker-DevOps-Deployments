@@ -1,4 +1,4 @@
-<!-- Run as a slideshow: reveal-md README.md -w -->
+<!-- Run as a slideshow: reveal-md Lessons/CourseOrientation.md -w -->
 # 🐳 Course Orientation
 
 <!-- omit in toc -->

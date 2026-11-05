@@ -1,4 +1,4 @@
-<!-- Run as a slideshow: reveal-md README.md -w -->
+<!-- Run as a slideshow: reveal-md Lessons/DNS.md -w -->
 # 🐳 DNS & Domain Names
 
 ⭐️ **GOAL**: Learn about the domain name system and register your very own domain for use throughout the course.

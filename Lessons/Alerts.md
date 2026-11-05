@@ -1,4 +1,4 @@
-<!-- Run as a slideshow: reveal-md README.md -w -->
+<!-- Run as a slideshow: reveal-md Lessons/Alerts.md -w -->
 # 🐳 Alerts & Notifications
 
 ⭐️ **GOAL**: Self-host [Uptime Kuma] on your CapRover PaaS to monitor uptime, send alert notifications, and publish a status page. Then prove your alerts work by taking an app down on purpose.
